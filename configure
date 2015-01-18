@@ -2,7 +2,19 @@
 git_PC=".git/hooks/pre-commit" 
 repo_PC=".git-hooks/pre-commit"
 
+if [ ! -d ".git" ]; then
+	echo "Error: This is not a git repo root folder" >&2
+	exit 1
+fi
+
+# Reinitialize the repo for a clean slate
+rm -rf .git
+git init .
+
 # Install the pre-commit hook, if there's no file with the same name
 if [ ! -f "$git_PC" ]; then
 	ln -sr "$repo_PC" "$git_PC"
 fi
+
+# Remove unwanted files
+rm LICENSE README.markdown configure

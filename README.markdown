@@ -5,6 +5,8 @@ It automates the creation of the meta.js file, so that scripts can auto-update e
 
 ## How to use
 
+*WARNING* Don't run this on an existing repo or it will delete it.
+
 Just clone this repository to the location of your choosing
 
     git clone git@github.com:somini/boilerplate.user.js.git "$YOURNAMEHERE"
@@ -17,6 +19,8 @@ and run `configure` to setup
 ## What does it do
 
 Installs a pre-commit hook that extracts the metadata block from any userscripts present in the current directory, creates a `meta.js` file and commits it.
+
+It will also remove unwanted files and reset the git repository, so *don't run it on an existing repo*.
 
 # Dependencies
 
