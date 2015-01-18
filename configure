@@ -1,0 +1,8 @@
+#!/bin/bash
+git_PC=".git/hooks/pre-commit" 
+repo_PC=".git-hooks/pre-commit"
+
+# Install the pre-commit hook, if there's no file with the same name
+if [ ! -f "$git_PC" ]; then
+	ln -sr "$repo_PC" "$git_PC"
+fi

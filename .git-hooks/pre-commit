@@ -1,0 +1,6 @@
+#!/bin/sh
+# Run the makefile, to regenerate the .meta.js
+make
+# Add the meta.js to the index
+# ATTENTION: the commit message doesn't include this addition
+git add -- ./*.meta.js
