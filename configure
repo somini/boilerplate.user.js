@@ -17,4 +17,5 @@ if [ ! -f "$git_PC" ]; then
 fi
 
 # Remove unwanted files
-rm LICENSE README.markdown configure
+rm LICENSE README.markdown
+mv configure .git-hooks/configure

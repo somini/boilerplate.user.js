@@ -22,6 +22,12 @@ Installs a pre-commit hook that extracts the metadata block from any userscripts
 
 It will also remove unwanted files and reset the git repository, so *don't run it on an existing repo*.
 
+The pre-commit hook and the configure script are stored in the `.git-hooks` folder. Running
+
+    .git-hooks/configure
+
+should configure the hook on other repositories.
+
 # Dependencies
 
 * git
