@@ -5,7 +5,7 @@ It automates the creation of the meta.js file, so that scripts can auto-update e
 
 ## How to use
 
-*WARNING* Don't run this on an existing repo or it will delete it.
+**WARNING** Don't run this on an existing repo or it will delete it.
 
 Just clone this repository to the location of your choosing
 
@@ -24,7 +24,7 @@ It will also remove unwanted files and reset the git repository, so *don't run i
 
 # Dependencies
 
-* git (du'h!)
+* git
 * make
 * sed
 
